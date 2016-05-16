@@ -35,6 +35,8 @@ nav ul {
 	display: flex;
 	justify-content: space-around;
 	flex-flow: row wrap;
+	font-family: 'Playfair Display SC', serif;
+	text-transform: uppercase;
 }
 
 nav ul a {
@@ -48,7 +50,6 @@ nav ul a {
 }
 
 nav ul a:hover {
-	color: red;
 	border-bottom: 1px solid #000;
 }
 
