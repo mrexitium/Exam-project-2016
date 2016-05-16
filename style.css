@@ -12,6 +12,10 @@ html, body {
 	min-height:100vh;
 }
 
+.content {
+	min-height: 75vh;
+}
+
 /*CSS for header.php below this line*/
 
 .site-header {
@@ -130,6 +134,41 @@ nav ul a:hover {
 }
 
 /*CSS for footer.php below this line*/
+
+#site-footer {
+	width:100%;
+	height:10vh;
+}
+
+.social-wrapper	{
+	display:flex;
+	justify-content: space-around;
+	width: 80%;
+	height: inherit;
+	margin:0 10%;
+	line-height: 10vh
+}
+
+.social-media {
+	width: 30%;
+	text-align: center;
+}
+
+.social-media img {
+	height: 2vh;
+	width: auto;
+	display:inline-block;
+}
+
+.social-media p {
+	display: inline-block;
+	line-height: 8vh;
+	margin: 0;
+	position: relative;
+	top: -0.3vh;
+	font-family: 'Playfair Display SC', serif;
+}
+
 
 /*CSS for index.php below this line*/
 

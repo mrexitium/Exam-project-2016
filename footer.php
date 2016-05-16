@@ -1,6 +1,19 @@
 	
-	<footer id="site-footer"> <!-- Only nessecary if we choose to use a footer -->
-		
+	<footer id="site-footer"> 
+		<div class="social-wrapper">
+			<div class="social-media">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" alt="facebook">
+				<p>Like on Facebook</p>
+			</div>
+			<div class="social-media">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/instagram.png" alt="instagram">
+				<p>Like on Instagram</p>
+			</div>
+			<div class="social-media">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/contact.png" alt="email">
+				<p>Contact on Email</p>
+			</div>
+		</div>
 	</footer>
 	
 	</div> <!-- End of #site-wrapper -->
