@@ -245,6 +245,30 @@ nav ul a:hover {
 	float:right;
 }
 
+@media only screen and (max-width: 750px) {
+	.post-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.loop-content {
+		width: 100%;
+		order: 2;
+	}
+
+	.photo-content {
+		width: 80%;
+		margin: 0 10%;
+		order: 1;
+	}
+
+	.photo-content img {
+		height: auto;
+		width: 80%;
+		overflow: hidden;
+	}
+}
+
 /*CSS for page-livery.php below this line*/
 
 /*CSS for page-events.php below this line*/
