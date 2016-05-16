@@ -2,16 +2,16 @@
 	<footer id="site-footer"> 
 		<div class="social-wrapper">
 			<div class="social-media">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" alt="facebook">
-				<p>Like on Facebook</p>
+				<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" alt="facebook"></a>
+				<a href="#"><p>Like on Facebook</p></a>
 			</div>
 			<div class="social-media">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/instagram.png" alt="instagram">
-				<p>Like on Instagram</p>
+				<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/instagram.png" alt="instagram"></a>
+				<a href="#"><p>Like on Instagram</p></a>
 			</div>
 			<div class="social-media">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/contact.png" alt="email">
-				<p>Contact on Email</p>
+				<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/contact.png" alt="email"></a>
+				<a href="#"><p>Contact on Email</p></a>
 			</div>
 		</div>
 	</footer>
