@@ -196,6 +196,35 @@ nav ul a:hover {
 
 /*CSS for page-teaching.php below this line*/
 
+.headline {
+	margin-top: 10vh;
+	height: 20vh;
+	text-align: center;
+	margin-bottom: 5vh;
+}
+
+.headline h1 {
+    font-family: TT, serif;
+    font-weight: normal;
+    margin: 0;
+    display: inline-block;
+    line-height: 12vh;
+    border-top: 1px solid #000;
+    margin-top: 4vh;
+    font-size: 3.5em;
+}
+
+.color-box {
+	background-color: #dfdbd0;
+    height: 15vh;
+    width: 30vw;
+    display: inline-block;
+    position: absolute;
+    top: 20vh;
+    left: 34vw;
+    z-index: -1;
+}
+
 .loop-content {
 	padding: 0 5%;
 	box-sizing:border-box;
@@ -249,6 +278,7 @@ nav ul a:hover {
 	.post-content {
 		display: flex;
 		flex-direction: column;
+		height: 120vh;
 	}
 
 	.loop-content {
@@ -266,6 +296,13 @@ nav ul a:hover {
 		height: auto;
 		width: 80%;
 		overflow: hidden;
+	}
+
+	.color-box {
+	    height: 10vh;
+	    width: 80vw;
+	    top: 70vh;
+	    left: 10vw;
 	}
 }
 

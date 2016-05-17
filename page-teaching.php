@@ -1,8 +1,10 @@
 <?php get_header(); ?>
 		
 		<div class="content"> <!-- Div for everything between header and footer -->
-
-			<h1>TEACHING</h1>
+			<div class="headline">
+				<div class="color-box"></div>
+				<h1>TEACHING</h1>
+			</div>
 			
 			<!-- Sample of The Loop to use for later -->
 			<?php $query = new WP_Query(array( 'category_name' => 'teaching' ) ); 
