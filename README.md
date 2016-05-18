@@ -58,4 +58,58 @@ $ git status
 
 Read by Greta, and Jesper and Emilia
 
+## Setting up wordpress
+
+#### Step 1
+
+Install Wordpress on the server, set up database and put the files in the theme folder.
+
+#### Step 2
+
+Log in as admin, enable the theme and create the following pages:
+```
+about, contact, events, livery, teaching
+```
+#### Step 3
+Go to Appearance - menu and create a menu called 
+
+``` 
+left menu
+```
+In this menu put the pages home, about and teaching, and set its position as left menu.
+
+#### Step 4
+Go to Appearance - menu and create a menu called 
+
+``` 
+right menu
+```
+In this menu put the pages livery, events and contact, and set its position as right menu.
+
+#### Step 5
+
+Home page @@@@ more content later
+
+#### Step 6
+
+About page @@@@ more content later
+
+#### Step 7
+
+Teaching page. Add 2 new posts with category 'teaching' and give them a landscape style foto as thumbnail, aswell as a title and content.
+
+Add posts for all the horses with thumbnail pictures and category 'horses'.
+
+#### Step 8
+
+Livery page. Go to the livery page and put in text on the content box, and give it a thumbnail picture.
+
+#### Step 9
+
+Events page. @@@@ more content later
+
+#### Step 10
+
+Contact page @@@@ more content later
+
 
