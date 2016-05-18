@@ -306,6 +306,16 @@ nav ul a:hover {
 	}
 }
 
+.horse {
+	width: 80%;
+	margin: 0 10%;
+}
+
+.horse img {
+	width: 100%;
+	height: auto;
+}
+
 /*CSS for page-livery.php below this line*/
 
 /*CSS for page-events.php below this line*/
