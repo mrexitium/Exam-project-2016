@@ -48,7 +48,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZG91dmFuam91IiwiYSI6ImNpbzlxMWF3YjAwMGt1cG0xN
 	  hash: true
 
   });
-  
+
 
 
 </script>

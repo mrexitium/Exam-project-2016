@@ -20,7 +20,6 @@ function loadMorePictures() {
 			action: 'lazy_load'
 		},
 		success: function( result ) {
-			console.log(result);
 			isActive = false;
 			for (var i = 0; i < result.data.length; i++) {
 				var thumbnail = result.data[i].thumbnail;
@@ -31,11 +30,9 @@ function loadMorePictures() {
 				offset = "?offset=";
 				offsetNum = 2;
 			}
-			else {
-				
+			else {				
 				offset = "?offset=";
 				offsetNum += 2;
-				console.log(offset + offsetNum);
 			}
 
 			
@@ -46,7 +43,7 @@ function loadMorePictures() {
 })(jQuery);
 
 jQuery('.open').click(function () {
-    jQuery(this).closest('.post-content').find('.open-content').toggleClass('hidden');
+    jQuery(this).closest('.post-content').find('.open-content').toggleClass('hidden', 1000);
     
 });
 
