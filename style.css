@@ -11,6 +11,7 @@ Description: This is the theme for Fyens Rideklub which is our exam project in t
     src: url(TT-Moons.otf);
 }
 
+
 html, body {
 	margin:0;
 	padding:0;
@@ -195,6 +196,126 @@ nav ul a:hover {
 
 /*CSS for page-about.php below this line*/
 
+.headline-about {
+	margin-top: 10vh;
+	height: 20vh;
+	text-align: center;
+	margin-bottom: 5vh;
+}
+
+.headline-about h1 {
+    font-family: TT, serif;
+    font-weight: normal;
+    margin: 0;
+    display: inline-block;
+    line-height: 12vh;
+    border-top: 1px solid #000;
+    margin-top: 4vh;
+    font-size: 3.5em;
+}
+
+h3 {
+    font-family: TT, serif;
+    font-weight: normal;
+    margin: 0;
+    display: inline-block;
+    line-height: 10vh;
+    border-top: 1px solid #000;
+    margin-top: 4vh;
+    font-size: 2.5em;
+}
+
+
+.loop-content-about {
+	padding: 0 5%;
+	box-sizing:border-box;
+	width:50%;
+	margin:0;
+}
+
+.photo-content-about {
+	width:50%;
+	height: inherit;
+	margin:0;
+	overflow: hidden;
+	z-index: -10;
+}
+
+.photo-content-about img {
+	height: 100%;
+	width: auto;
+	overflow: hidden;
+	z-index: -10;
+}
+
+.post-content-about {
+	width: 100%;
+	height: 80vh;
+	overflow: hidden;
+	clear: both;
+	font-family: 'EB Garamond', serif;
+}
+
+.post-content-about h3 {
+	font-family: TT, serif;
+	font-weight: normal;
+}
+
+.post-content-about:nth-child(even) div.loop-content-about {
+	float:left;
+}
+
+.post-content-about:nth-child(odd) div.loop-content-about {
+	float:right;
+}
+
+.color-box-history {
+	background-color: #EEF7F6;
+    height: 10vh;
+    width: 20vw;
+    display: inline-block;
+    position: absolute;
+    margin-top: 60vh;
+    right: 66vw;
+    z-index: -1;
+}
+
+.color-box-staff {
+	background-color: #EEF7F6;
+    height: 10vh;
+    width: 20vw;
+    display: inline-block;
+    position: absolute;
+    top: 55vh;
+    right: 66vw;
+    z-index: -1;
+}
+
+.post-content-staff {
+
+}
+
+.photo-content-staff {
+	height: 20vh;
+	width: 10vw;
+}
+
+.photo-content-staff img {
+	width: 100%;
+	height: 100%;
+}
+
+h2 {
+	font-family: 'EB Garamond', serif;
+	font-weight: normal;
+	font-size: 2em;
+	margin-top: 0px;
+}
+
+p {
+	margin-top: 0px;
+	font-family: 'EB Garamond', serif;
+}
 /*CSS for page-teaching.php below this line*/
 
 .headline {
@@ -322,9 +443,41 @@ nav ul a:hover {
 	}
 }
 
+.horse {
+	width: 80%;
+	margin: 0 10%;
+}
+
+.horse img {
+	width: 100%;
+	height: auto;
+}
+
 /*CSS for page-livery.php below this line*/
 
+.color-livery {
+	background-color: #f2f4ed;
+}
+
+.image-wrapper {
+	width:100%;
+}
+
+.image-wrapper img {
+	width:100%;
+	height: auto;
+}
+
+.livery-content {
+	width: 80%;
+	margin: 0 10%;
+}
+
 /*CSS for page-events.php below this line*/
+
+.post-content h2 {
+	font-family: 'Playfair Display SC', serif;;
+}
 
 .headline-events {
 	margin-top: 5vh;
@@ -346,17 +499,17 @@ nav ul a:hover {
 
 .color-box-events {
 	background-color: #e6ebf0;
-    height: 20vh;
+    height: 25vh;
     width: 32vw;
     display: inline-block;
     position: absolute;
-    top: 35vh;
+    top: 30vh;
     left: 34vw;
     z-index: -1;
 }
 
 .open-content {
-	background-color: #12263a;
+	background-color: #fff;
 	height:inherit;
 	width: 100%;
 }
@@ -423,6 +576,29 @@ nav ul a:hover {
 .hidden {
 	display:none;
 	visibility: hidden;
+}
+
+.more-description {
+	padding: 7vh 4vw;
+	position:relative;
+}
+
+.more-description p {
+	position: relative;
+	z-index: 2;
+}
+
+.colour-box-description {
+	background-color: #e6ebf0;
+	padding: 30%;
+	position:absolute;
+	top:0;
+
+}
+
+.center {
+	padding-top: 5vh;
+	text-align: center
 }
 
 /*CSS for page-contact.php below this line*/
@@ -505,4 +681,5 @@ font-family: 'Playfair Display SC', serif;
 
 
 
-	}
+}
+
