@@ -322,6 +322,10 @@ nav ul a:hover {
 
 /*CSS for page-livery.php below this line*/
 
+.color-livery {
+	background-color: #f2f4ed;
+}
+
 /*CSS for page-events.php below this line*/
 
 .headline-events {
