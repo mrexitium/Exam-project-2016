@@ -31,13 +31,16 @@
 
 					<div class="photo-content" style="background: url('<?php echo $thumbnail; ?>') no-repeat; background-position: top center; background-size: cover">
 						<div class="open-content hidden">
+
 							<div class="more-description">
-							
+
 								<div class="colour-box-description">
 								</div>
-								<p>
-									<?php the_content(); ?>
-								</p>
+								<div class="content-description">
+									<p>
+										<?php the_content(); ?>
+									</p>
+								</div>
 
 							</div>
 						</div>

@@ -56,7 +56,7 @@ jQuery.fn.toggleText = function(t1, t2){
   return this;
 };
 jQuery('.open').click(function(){
-  $(this).toggleText('See Less', 'See More');
+  jQuery(this).toggleText('See Less', 'See More');
 })
 
 jQuery('.loop-content-staff .post-content-staff:nth-child(2)').css({'position': 'relative', 'top': '5vh'});
