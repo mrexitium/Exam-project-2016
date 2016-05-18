@@ -59,3 +59,8 @@ jQuery('.open').click(function(){
   jQuery(this).toggleText('See Less', 'See More');
 })
 
+jQuery('.loop-content-staff .post-content-staff:nth-child(2)').css({'position': 'relative', 'top': '5vh'});
+jQuery('.loop-content-staff .post-content-staff:nth-child(3)').css({'position': 'relative', 'top': '10vh'});
+jQuery('.loop-content-staff .post-content-staff:nth-child(5)').css({'position': 'relative', 'top': '5vh'});
+jQuery('.loop-content-staff .post-content-staff:nth-child(6)').css({'position': 'relative', 'top': '10vh'});
+
