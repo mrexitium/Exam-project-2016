@@ -38,6 +38,7 @@ html, body {
 	margin: 2vh 10%;
 	display: flex;
 	background-color: #fff;
+	z-index: 50;
 }
 
 nav ul {
@@ -456,10 +457,12 @@ nav ul a:hover {
 }
 
 .colour-box-description {
-	background-color: #e6ebf0;
+	background-color: #F9F7F2;
 	padding: 30%;
 	position:absolute;
-	top:0;
+	top: 20%;
+    width: 45%;
+    height: 23vh;
 
 }
 
@@ -468,4 +471,21 @@ nav ul a:hover {
 	text-align: center
 }
 
+.content-description {
+	margin-left: 3vh;
+
+
+}
+
+@media only screen and (max-width: 750px) {
+		.color-box-events {
+	    height: 20vh;
+	    width: 80vw;
+	    top: 70vh;
+	    left: 10vw;
+	}
+
+.center {
+	padding-top: 0vh;
+}
 /*CSS for page-contact.php below this line*/

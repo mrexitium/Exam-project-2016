@@ -56,6 +56,6 @@ jQuery.fn.toggleText = function(t1, t2){
   return this;
 };
 jQuery('.open').click(function(){
-  $(this).toggleText('See Less', 'See More');
+  jQuery(this).toggleText('See Less', 'See More');
 })
 
