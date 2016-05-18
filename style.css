@@ -326,6 +326,20 @@ nav ul a:hover {
 	background-color: #f2f4ed;
 }
 
+.image-wrapper {
+	width:100%;
+}
+
+.image-wrapper img {
+	width:100%;
+	height: auto;
+}
+
+.livery-content {
+	width: 80%;
+	margin: 0 10%;
+}
+
 /*CSS for page-events.php below this line*/
 
 .headline-events {
