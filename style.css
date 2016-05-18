@@ -11,6 +11,7 @@ Description: This is the theme for Fyens Rideklub which is our exam project in t
     src: url(TT-Moons.otf);
 }
 
+
 html, body {
 	margin:0;
 	padding:0;
@@ -196,6 +197,126 @@ nav ul a:hover {
 
 /*CSS for page-about.php below this line*/
 
+.headline-about {
+	margin-top: 10vh;
+	height: 20vh;
+	text-align: center;
+	margin-bottom: 5vh;
+}
+
+.headline-about h1 {
+    font-family: TT, serif;
+    font-weight: normal;
+    margin: 0;
+    display: inline-block;
+    line-height: 12vh;
+    border-top: 1px solid #000;
+    margin-top: 4vh;
+    font-size: 3.5em;
+}
+
+h3 {
+    font-family: TT, serif;
+    font-weight: normal;
+    margin: 0;
+    display: inline-block;
+    line-height: 10vh;
+    border-top: 1px solid #000;
+    margin-top: 4vh;
+    font-size: 2.5em;
+}
+
+
+.loop-content-about {
+	padding: 0 5%;
+	box-sizing:border-box;
+	width:50%;
+	margin:0;
+}
+
+.photo-content-about {
+	width:50%;
+	height: inherit;
+	margin:0;
+	overflow: hidden;
+	z-index: -10;
+}
+
+.photo-content-about img {
+	height: 100%;
+	width: auto;
+	overflow: hidden;
+	z-index: -10;
+}
+
+.post-content-about {
+	width: 100%;
+	height: 80vh;
+	overflow: hidden;
+	clear: both;
+	font-family: 'EB Garamond', serif;
+}
+
+.post-content-about h3 {
+	font-family: TT, serif;
+	font-weight: normal;
+}
+
+.post-content-about:nth-child(even) div.loop-content-about {
+	float:left;
+}
+
+.post-content-about:nth-child(odd) div.loop-content-about {
+	float:right;
+}
+
+.color-box-history {
+	background-color: #EEF7F6;
+    height: 10vh;
+    width: 20vw;
+    display: inline-block;
+    position: absolute;
+    margin-top: 60vh;
+    right: 66vw;
+    z-index: -1;
+}
+
+.color-box-staff {
+	background-color: #EEF7F6;
+    height: 10vh;
+    width: 20vw;
+    display: inline-block;
+    position: absolute;
+    top: 55vh;
+    right: 66vw;
+    z-index: -1;
+}
+
+.post-content-staff {
+
+}
+
+.photo-content-staff {
+	height: 20vh;
+	width: 10vw;
+}
+
+.photo-content-staff img {
+	width: 100%;
+	height: 100%;
+}
+
+h2 {
+	font-family: 'EB Garamond', serif;
+	font-weight: normal;
+	font-size: 2em;
+	margin-top: 0px;
+}
+
+p {
+	margin-top: 0px;
+	font-family: 'EB Garamond', serif;
+}
 /*CSS for page-teaching.php below this line*/
 
 .headline {
@@ -234,6 +355,8 @@ nav ul a:hover {
 	margin:0;
 }
 
+
+
 .photo-content {
 	width:50%;
 	height: inherit;
@@ -257,10 +380,13 @@ nav ul a:hover {
 	font-family: 'EB Garamond', serif;
 }
 
+
 .post-content h1 {
 	font-family: TT, serif;
 	font-weight: normal;
 }
+
+
 
 .post-content:nth-child(even) div.loop-content {
 	float:right;
@@ -290,6 +416,13 @@ nav ul a:hover {
 		width: 100%;
 		order: 2;
 	}
+
+	.loop-wrapper {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
+
 
 	.photo-content {
 		width: 80%;
@@ -488,4 +621,82 @@ nav ul a:hover {
 .center {
 	padding-top: 0vh;
 }
+
 /*CSS for page-contact.php below this line*/
+
+.loop-content-contact {
+	box-sizing:border-box;
+	margin:auto;
+	display: inline-block;
+	text-align: center;
+}
+
+.post-content-contact {
+	font-family: 'EB Garamond', serif;
+	padding-bottom: 5%;
+	width: 50%;
+	display:flex;
+}
+
+.loop-wrapper {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
+
+.post-content-contact h1 {
+	font-family: 'Playfair Display SC', serif;
+	font-weight: lighter;
+	 border-bottom: 1px solid #000;
+	padding-bottom: 8%;
+	text-align: center;
+	width: inherit;
+}
+
+.post-content-contact p {
+text-align: center;
+}
+
+.contact-picture {
+	width: 18%;
+	height: 18%;
+	padding-top: 3%;
+	padding-bottom: 6%;
+}
+
+.contact-picture h1 {
+font-family: 'Playfair Display SC', serif;
+	font-weight: lighter;
+	text-align: center;
+}
+
+.contact-picture img {
+width:100%;
+height: auto;
+}
+
+@media only screen and (max-width: 750px) {
+
+	.loop-wrapper {
+		flex-flow: column wrap;
+	}
+
+	.post-content-contact {
+		width: 100%;
+		
+	}.contact-picture {
+		width: 80%;
+		height: 50%;
+		padding-top: 3%;
+		padding-bottom: 6%;
+		margin:auto;
+	}
+
+	.contact-picture h1 {
+	font-family: 'Playfair Display SC', serif;
+		font-weight: lighter;
+		text-align: center;
+	}
+}
+
+
