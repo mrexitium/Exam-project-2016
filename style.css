@@ -372,8 +372,8 @@ p {
 }
 
 .post-content {
-	width: 50%;
-	height: 100vh;
+	width: 100%;
+	height: 80vh;
 	overflow: hidden;
 	clear: both;
 	font-family: 'EB Garamond', serif;
