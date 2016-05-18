@@ -447,7 +447,25 @@ p {
 	background-color: #f2f4ed;
 }
 
+.image-wrapper {
+	width:100%;
+}
+
+.image-wrapper img {
+	width:100%;
+	height: auto;
+}
+
+.livery-content {
+	width: 80%;
+	margin: 0 10%;
+}
+
 /*CSS for page-events.php below this line*/
+
+.post-content h2 {
+	font-family: 'Playfair Display SC', serif;;
+}
 
 .headline-events {
 	margin-top: 5vh;
@@ -469,17 +487,17 @@ p {
 
 .color-box-events {
 	background-color: #e6ebf0;
-    height: 20vh;
+    height: 25vh;
     width: 32vw;
     display: inline-block;
     position: absolute;
-    top: 35vh;
+    top: 30vh;
     left: 34vw;
     z-index: -1;
 }
 
 .open-content {
-	background-color: #12263a;
+	background-color: #fff;
 	height:inherit;
 	width: 100%;
 }
@@ -546,6 +564,29 @@ p {
 .hidden {
 	display:none;
 	visibility: hidden;
+}
+
+.more-description {
+	padding: 7vh 4vw;
+	position:relative;
+}
+
+.more-description p {
+	position: relative;
+	z-index: 2;
+}
+
+.colour-box-description {
+	background-color: #e6ebf0;
+	padding: 30%;
+	position:absolute;
+	top:0;
+
+}
+
+.center {
+	padding-top: 5vh;
+	text-align: center
 }
 
 /*CSS for page-contact.php below this line*/
