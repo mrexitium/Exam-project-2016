@@ -1,10 +1,12 @@
 (function($) {
 var isActive = false;
 $(window).scroll(function(){
-    if  (!isActive && $(window).scrollTop() == $(document).height() - $(window).height()){
-    	isActive = true;
-    	loadMorePictures();
-    }
+	if (window.location.href == 'http://localhost/wordpress/index.php/teaching/') {
+	    if  (!isActive && $(window).scrollTop() == $(document).height() - $(window).height()){
+	    	isActive = true;
+	    	loadMorePictures();
+	    }
+	}
 });
 
 offset = "";
