@@ -495,6 +495,46 @@ p {
 
 /*CSS for page-events.php below this line*/
 
+.loop-content-events {
+	padding: 0 5%;
+	box-sizing:border-box;
+	width:50%;
+	margin:0;
+}
+
+.photo-content-events {
+	width:50%;
+	height: inherit;
+	margin:0;
+	overflow: hidden;
+	z-index: -10;
+}
+
+.photo-content-events img {
+	height: 100%;
+	width: auto;
+	overflow: hidden;
+	z-index: -10;
+}
+
+
+.post-content:nth-child(even) div.loop-content-events {
+	float:right;
+}
+
+.post-content:nth-child(odd) div.loop-content-events {
+	float:left;
+}
+
+.post-content:nth-child(even) div.photo-content-events {
+	float:left;
+}
+
+.post-content:nth-child(odd) div.photo-content-events {
+	float:right;
+}
+
+
 .post-content h2 {
 	font-family: 'Playfair Display SC', serif;;
 }
@@ -542,15 +582,20 @@ p {
   color: #000;
   font-size: 13px;
   font-family: montserrat;
-  padding: 10px 20px 10px 20px;
-  border: solid #000000 3px;
+  padding: 12px 22px 12px 22px;
+  background-color: #000;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  width: 7vw;
+  width: 9vw;
   margin: 5% auto 0% auto;
+  font-family: TT;
 }
 
-.sweep-to-right {
+.see:hover {
+	cursor: pointer;
+}
+.hvr-outline-in {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -560,45 +605,33 @@ p {
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
 }
-
-.sweep-to-right:before {
-  content: "";
+.hvr-outline-in:before {
+  pointer-events: none;
+  content: '';
   position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #000;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 0 50%;
-  transform-origin: 0 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
+  border: #000 solid 4px;
+  top: -16px;
+  right: -16px;
+  bottom: -16px;
+  left: -16px;
+  opacity: 0;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
 }
-
-.sweep-to-right:hover, .-sweep-to-right:focus, .-sweep-to-right:active {
-  color: white;
-}
-
-.sweep-to-right:hover:before, .-sweep-to-right:focus:before, .-sweep-to-right:active:before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+.hvr-outline-in:hover:before, .hvr-outline-in:focus:before, .hvr-outline-in:active:before {
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  opacity: 1;
 }
 
 .hidden {
 	display:none;
-	visibility: hidden;
+	/*visibility: hidden;*/
 }
 
 .more-description {
@@ -640,6 +673,25 @@ p {
 	.center {
 		padding-top: 0vh;
 	}
+
+	.loop-content-events {
+		width: 100%;
+		order: 1;
+	}
+
+	.photo-content-events {
+		width: 80%;
+		margin: 0 10%;
+		order: 2;
+	}
+
+	.photo-content-events img {
+		height: auto;
+		width: 80%;
+		overflow: hidden;
+	}
+
+
 }
 
 /*CSS for page-contact.php below this line*/
