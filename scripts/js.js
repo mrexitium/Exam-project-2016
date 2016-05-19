@@ -1,7 +1,7 @@
 (function($) {
 var isActive = false;
 $(window).scroll(function(){
-	if (window.location.href == 'http://localhost/wordpress/index.php/teaching/') {
+	if (window.location.href == 'http://jespers-design.dk/wordpress3/teaching/') {
 	    if  (!isActive && $(window).scrollTop() == $(document).height() - $(window).height()){
 	    	isActive = true;
 	    	loadMorePictures();
@@ -14,7 +14,7 @@ offsetNum = "";
 
 function loadMorePictures() {
 	$.ajax({
-		url: 'http://localhost/wordpress/wp-admin/admin-ajax.php' + offset + offsetNum,
+		url: 'http://jespers-design.dk/wordpress3/wp-admin/admin-ajax.php' + offset + offsetNum,
 		type: 'post',
 		data: {
 			action: 'lazy_load'
@@ -30,7 +30,8 @@ function loadMorePictures() {
 				offset = "?offset=";
 				offsetNum = 2;
 			}
-			else {				
+			else {
+				
 				offset = "?offset=";
 				offsetNum += 2;
 			}
@@ -43,7 +44,7 @@ function loadMorePictures() {
 })(jQuery);
 
 jQuery('.open').click(function () {
-    jQuery(this).closest('.post-content').find('.open-content').toggleClass('hidden', 1000);
+    jQuery(this).closest('.post-content').find('.open-content').toggleClass('hidden');
     
 });
 

@@ -381,8 +381,6 @@ p {
 	margin:0;
 }
 
-
-
 .photo-content {
 	width:50%;
 	height: inherit;
@@ -406,13 +404,10 @@ p {
 	font-family: 'EB Garamond', serif;
 }
 
-
 .post-content h1 {
 	font-family: TT, serif;
 	font-weight: normal;
 }
-
-
 
 .post-content:nth-child(even) div.loop-content {
 	float:right;
@@ -430,7 +425,6 @@ p {
 	float:right;
 }
 
-
 @media only screen and (max-width: 750px) {
 	.post-content {
 		display: flex;
@@ -447,8 +441,7 @@ p {
 	display: flex;
 	justify-content: space-around;
 	flex-flow: row wrap;
-}
-
+	}
 
 	.photo-content {
 		width: 80%;
@@ -572,6 +565,7 @@ p {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+
 .sweep-to-right:before {
   content: "";
   position: absolute;
@@ -592,9 +586,11 @@ p {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .sweep-to-right:hover, .-sweep-to-right:focus, .-sweep-to-right:active {
   color: white;
 }
+
 .sweep-to-right:hover:before, .-sweep-to-right:focus:before, .-sweep-to-right:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -622,7 +618,6 @@ p {
 	top: 20%;
     width: 45%;
     height: 23vh;
-
 }
 
 .center {
@@ -632,20 +627,19 @@ p {
 
 .content-description {
 	margin-left: 3vh;
-
-
 }
 
 @media only screen and (max-width: 750px) {
-		.color-box-events {
+	.color-box-events {
 	    height: 20vh;
 	    width: 80vw;
 	    top: 70vh;
 	    left: 10vw;
 	}
 
-.center {
-	padding-top: 0vh;
+	.center {
+		padding-top: 0vh;
+	}
 }
 
 /*CSS for page-contact.php below this line*/
@@ -680,7 +674,7 @@ p {
 }
 
 .post-content-contact p {
-text-align: center;
+	text-align: center;
 }
 
 .contact-picture {
@@ -709,8 +703,9 @@ height: auto;
 
 	.post-content-contact {
 		width: 100%;
-		
-	}.contact-picture {
+	}
+
+	.contact-picture {
 		width: 80%;
 		height: 50%;
 		padding-top: 3%;
