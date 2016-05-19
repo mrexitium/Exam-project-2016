@@ -75,6 +75,8 @@ map.on('load', function () {
             "text-anchor": "top"
         }
     });
+
+    map.scrollZoom.disable();
 });
 
 
