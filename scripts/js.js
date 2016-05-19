@@ -44,7 +44,9 @@ function loadMorePictures() {
 })(jQuery);
 
 jQuery('.open').click(function () {
-    jQuery(this).closest('.post-content').find('.open-content').toggleClass('hidden');
+	jQuery(this).toggleText('See Less', 'See More');
+    jQuery(this).closest('.post-content').find('.open-content').fadeToggle(500);
+    
     
 });
 
@@ -53,12 +55,13 @@ jQuery.fn.toggleText = function(t1, t2){
   else                   this.text(t1);
   return this;
 };
-jQuery('.open').click(function(){
-  jQuery(this).toggleText('See Less', 'See More');
-})
+
+
+  /*
 
 jQuery('.loop-content-staff .post-content-staff:nth-child(2)').css({'position': 'relative', 'top': '5vh'});
 jQuery('.loop-content-staff .post-content-staff:nth-child(3)').css({'position': 'relative', 'top': '10vh'});
 jQuery('.loop-content-staff .post-content-staff:nth-child(5)').css({'position': 'relative', 'top': '5vh'});
 jQuery('.loop-content-staff .post-content-staff:nth-child(6)').css({'position': 'relative', 'top': '10vh'});
 
+*/
