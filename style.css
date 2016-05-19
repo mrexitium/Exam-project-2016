@@ -97,6 +97,7 @@ nav ul a:hover {
 		position: static;
 		width:100vw;
 		margin:0;
+		height: 75px;
 	}
 
 	.logo-wrapper {
@@ -106,13 +107,13 @@ nav ul a:hover {
 	.menu-left-menu-container {
 		width:100vw;
 		order:2;
-		height:21vh;
+		height:150px;
 	}
 
 	.menu-right-menu-container {
 		width:100vw;
 		order:3;
-		height:21vh;
+		height:150px;
 	}
 
 	nav ul {
@@ -139,7 +140,7 @@ nav ul a:hover {
 	}
 
 	.site-header {
-		height:54vh;
+		height:375px;
 	}
 }
 
@@ -192,6 +193,14 @@ nav ul a:hover {
 
 
 /*CSS for index.php below this line*/
+
+.vidya {
+	width: 100%;
+	background-image: url('images/instagram.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 85vh;
+}
 
 /*CSS for single.php below this line*/
 
