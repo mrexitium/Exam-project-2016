@@ -89,9 +89,5 @@ map.on('load', function () {
 
 
 
-  new L.Control.Zoom({ position: 'topright' }).addTo(map);
-
-
-
 </script>
 <?php get_footer(); ?>
