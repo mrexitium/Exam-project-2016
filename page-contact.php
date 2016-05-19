@@ -48,6 +48,46 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZG91dmFuam91IiwiYSI6ImNpbzlxMWF3YjAwMGt1cG0xN
 	  hash: true
 
   });
+  
+map.on('load', function () {
+    map.addSource("markers", {
+        "type": "geojson",
+        "data": {
+            "type":"FeatureCollection",
+            "features":[{
+                "type":"Feature",
+                "properties":{
+                    "id":"marker-iod3cl120",
+                    "title":"Fyens Rideklub",
+                    "description":"Adresse: TarupgÃ¥rdsvej 3, 5210 Odense <br>\nTelefon: 66 17 98 64",
+                    "marker-size":"large",
+                    "marker-color":"#e7857f",
+                    "marker-symbol":""
+                    
+                },
+                "geometry":{
+                    "coordinates":[10.353523,55.409392],
+                    "type":"Point"
+                },
+            }],
+        }
+    });
+
+    map.addLayer({
+        "id": "markers",
+        "type": "symbol",
+        "source": "markers",
+        "layout": {
+            "icon-image": "marker-15",
+            "text-field": "{title}",
+            "text-font": ["Open Sans Regular", "Arial Unicode MS Bold"],
+            "text-offset": [0, 0.6],
+            "text-anchor": "top"
+        }
+    });
+});
+
+
 
   new L.Control.Zoom({ position: 'topright' }).addTo(map);
 
