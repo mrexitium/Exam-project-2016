@@ -49,6 +49,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZG91dmFuam91IiwiYSI6ImNpbzlxMWF3YjAwMGt1cG0xN
 
   });
 
+  new L.Control.Zoom({ position: 'topright' }).addTo(map);
+
 
 
 </script>
