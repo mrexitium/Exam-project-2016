@@ -668,7 +668,7 @@ p {
 	font-family: 'Playfair Display SC', serif;
 	font-weight: lighter;
 	 border-bottom: 1px solid #000;
-	padding-bottom: 8%;
+	padding-bottom: 2vh;
 	text-align: center;
 	width: inherit;
 }

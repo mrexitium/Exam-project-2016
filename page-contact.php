@@ -79,7 +79,5 @@ map.on('load', function () {
 
 
 
-
-
 </script>
 <?php get_footer(); ?>
