@@ -23,17 +23,7 @@
 				</div>
 
 			<?php endwhile; wp_reset_postdata(); ?> <!-- Important to reset the postdata so another custom loop can be made later -->
-
-		<?php $query2 = new WP_Query(array( 'category_name' => 'contactpicture' ) ); 
-		while($query2->have_posts()) : $query2->the_post(); ?> <!-- Shorthand while loop that takes the posts that fits the criteria 3 lines up -->
-			<div class="contact-picture">
-				 <?php the_post_thumbnail(); ?>
-				 <h1>
-					<?php the_title(); ?>
-				 </h1>
-			</div>
-			<?php endwhile; wp_reset_postdata(); ?> <!-- Important to reset the postdata so another custom loop can be made later -->
-		</div>
+		</div><!-- loop-wrapper -->
 		
 		</div> <!-- End of .content -->
 
