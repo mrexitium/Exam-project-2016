@@ -124,19 +124,19 @@ nav ul a:hover {
 	.menu-left-menu-container ul li {
 		width:100%;
 		text-align: center;
-		height:7vh;
+		height:49px;
 		border-bottom: 1px solid #e4e5e6;
 	}
 
 	.menu-right-menu-container ul li {
 		width:100%;
 		text-align: center;
-		height:7vh;
+		height:49px;
 		border-bottom: 1px solid #e4e5e6;
 	}
 
 	nav ul a {
-		line-height: 7vh;
+		line-height: 49px;
 	}
 
 	.site-header {
@@ -465,9 +465,9 @@ p {
 	}
 
 	.color-box {
-	    height: 10vh;
+	    height: 100px;
 	    width: 80vw;
-	    top: 70vh;
+	    top: 390px;
 	    left: 10vw;
 	}
 }
@@ -640,9 +640,9 @@ p {
 
 @media only screen and (max-width: 750px) {
 	.color-box-events {
-	    height: 20vh;
+	    height: 100px;
 	    width: 80vw;
-	    top: 70vh;
+	    top: 390px;
 	    left: 10vw;
 	}
 
