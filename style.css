@@ -676,11 +676,10 @@ p {
 
 	.headline-events h1 {
 
-		font-size: 2vh;
+		font-size: 10vh;
 		line-height: 10vh;
 	    border-top: 1px solid #000;
 	    margin-top: 4vh;
-	    font-size: 3.5em;
 	}
 	.color-box-events {
 	    height: 100px;
