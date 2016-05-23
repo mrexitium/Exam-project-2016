@@ -23,17 +23,7 @@
 				</div>
 
 			<?php endwhile; wp_reset_postdata(); ?> <!-- Important to reset the postdata so another custom loop can be made later -->
-
-		<?php $query2 = new WP_Query(array( 'category_name' => 'contactpicture' ) ); 
-		while($query2->have_posts()) : $query2->the_post(); ?> <!-- Shorthand while loop that takes the posts that fits the criteria 3 lines up -->
-			<div class="contact-picture">
-				 <?php the_post_thumbnail(); ?>
-				 <h1>
-					<?php the_title(); ?>
-				 </h1>
-			</div>
-			<?php endwhile; wp_reset_postdata(); ?> <!-- Important to reset the postdata so another custom loop can be made later -->
-		</div>
+		</div><!-- loop-wrapper -->
 		
 		</div> <!-- End of .content -->
 
@@ -43,11 +33,52 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZG91dmFuam91IiwiYSI6ImNpbzlxMWF3YjAwMGt1cG0xN
   var map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/douvanjou/cio9q8imc004avemcqvono1va',
-      center: [-122.420679, 37.772537],
+      center: [10.353518099999974, 55.40931699999999],
 	  zoom: 13,
 	  hash: true
 
   });
+  
+map.on('load', function () {
+    map.addSource("markers", {
+        "type": "geojson",
+        "data": {
+            "type":"FeatureCollection",
+            "features":[{
+                "type":"Feature",
+                "properties":{
+                    "id":"marker-iod3cl120",
+                    "title":"Fyens Rideklub",
+                    "description":"Adresse: TarupgÃ¥rdsvej 3, 5210 Odense <br>\nTelefon: 66 17 98 64",
+                    "marker-size":"large",
+                    "marker-color":"#e7857f",
+                    "marker-symbol":""
+                    
+                },
+                "geometry":{
+                    "coordinates":[10.353523,55.409392],
+                    "type":"Point"
+                },
+            }],
+        }
+    });
+
+    map.addLayer({
+        "id": "markers",
+        "type": "symbol",
+        "source": "markers",
+        "layout": {
+            "icon-image": "marker-15",
+            "text-field": "{title}",
+            "text-font": ["Open Sans Regular", "Arial Unicode MS Bold"],
+            "text-offset": [0, 0.6],
+            "text-anchor": "top"
+        }
+    });
+
+    map.scrollZoom.disable();
+});
+
 
 
 </script>

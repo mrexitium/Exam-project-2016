@@ -1,7 +1,7 @@
 (function($) {
 var isActive = false;
 $(window).scroll(function(){
-	if (window.location.href == 'http://localhost/wordpress/index.php/teaching/') {
+	if (window.location.href == 'http://jespers-design.dk/wordpress3/teaching/') {
 	    if  (!isActive && $(window).scrollTop() == $(document).height() - $(window).height()){
 	    	isActive = true;
 	    	loadMorePictures();
@@ -14,13 +14,12 @@ offsetNum = "";
 
 function loadMorePictures() {
 	$.ajax({
-		url: 'http://localhost/wordpress/wp-admin/admin-ajax.php' + offset + offsetNum,
+		url: 'http://jespers-design.dk/wordpress3/wp-admin/admin-ajax.php' + offset + offsetNum,
 		type: 'post',
 		data: {
 			action: 'lazy_load'
 		},
 		success: function( result ) {
-			console.log(result);
 			isActive = false;
 			for (var i = 0; i < result.data.length; i++) {
 				var thumbnail = result.data[i].thumbnail;
@@ -35,7 +34,6 @@ function loadMorePictures() {
 				
 				offset = "?offset=";
 				offsetNum += 2;
-				console.log(offset + offsetNum);
 			}
 
 			
@@ -46,7 +44,9 @@ function loadMorePictures() {
 })(jQuery);
 
 jQuery('.open').click(function () {
-    jQuery(this).closest('.post-content').find('.open-content').toggleClass('hidden');
+	jQuery(this).toggleText('See Less', 'See More');
+    jQuery(this).closest('.post-content').find('.open-content').fadeToggle(500);
+    
     
 });
 
@@ -55,9 +55,7 @@ jQuery.fn.toggleText = function(t1, t2){
   else                   this.text(t1);
   return this;
 };
-jQuery('.open').click(function(){
-  jQuery(this).toggleText('See Less', 'See More');
-})
+
 
 jQuery('.loop-content-staff .post-content-staff:nth-child(2)').css({'position': 'relative', 'top': '5vh'});
 jQuery('.loop-content-staff .post-content-staff:nth-child(3)').css({'position': 'relative', 'top': '10vh'});

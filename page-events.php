@@ -11,7 +11,7 @@
 
 			while($query->have_posts()) : $query->the_post(); ?> <!-- Shorthand while loop that takes the posts that fits the criteria 3 lines up -->
 				<div class="post-content">
-					<div class="loop-content center">
+					<div class="loop-content-events center">
 						<h2>
 							<?php the_title(); ?>
 						</h2>
@@ -19,7 +19,7 @@
 							<?php the_excerpt(); ?>
 						</p>
 
-						<div class="see open sweep-to-right" >See more</div>
+						<div class="see open hvr-outline-in" >See more</div>
 					</div>
 					<?php 
 						$post_image_id = get_post_thumbnail_id($post_to_use->ID);
@@ -29,7 +29,7 @@
 						}
 					 ?>
 
-					<div class="photo-content" style="background: url('<?php echo $thumbnail; ?>') no-repeat; background-position: top center; background-size: cover">
+					<div class="photo-content-events" style="background: url('<?php echo $thumbnail; ?>') no-repeat; background-position: top center; background-size: cover">
 						<div class="open-content hidden">
 
 							<div class="more-description">
