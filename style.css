@@ -96,7 +96,7 @@ nav ul a:hover {
 	.site-nav {
 		flex-direction: column;
 		position: static;
-		width:100vw;
+		width:100%;
 		padding:0;
 		height: 75px;
 	}
@@ -106,20 +106,20 @@ nav ul a:hover {
 	}
 
 	.menu-left-menu-container {
-		width:100vw;
+		width:100%;
 		order:2;
 		height:150px;
 	}
 
 	.menu-right-menu-container {
-		width:100vw;
+		width:100%;
 		order:3;
 		height:150px;
 	}
 
 	nav ul {
 		flex-flow: column wrap;
-		width:100vw;
+		width:100%;
 	}
 
 	.menu-left-menu-container ul li {
