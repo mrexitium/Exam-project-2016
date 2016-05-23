@@ -225,6 +225,9 @@ h3 {
     font-size: 2.5em;
 }
 
+/*
+HISTORY-about
+*/
 
 .loop-content-about {
 	padding: 0 5%;
@@ -250,10 +253,11 @@ h3 {
 
 .post-content-about {
 	width: 100%;
-	height: 80vh;
+	height: 70vh;
 	overflow: hidden;
-	clear: both;
-	font-family: 'EB Garamond', serif;
+	clear: both;'EB Garamond'
+	font-family: , serif;
+	margin-bottom: 0px;
 }
 
 .post-content-about h3 {
@@ -280,6 +284,10 @@ h3 {
     z-index: -1;
 }
 
+/*
+STAFF-about
+*/
+
 .staff-header {
 	width: 100%;
 	text-align: center;
@@ -296,14 +304,13 @@ h4 {
     text-align: center;
 }
 
-
 .color-box-staff {
-	background-color: #EEF7F6;
+	background-color: #dfdbd0;
     height: 7vh;
     width: 20vw;
     display: inline-block;
     position: absolute;
-    top: 139vh;
+    top: 129vh;
     right: 39.5vw;
     z-index: -1;
 }
@@ -316,33 +323,99 @@ h4 {
 
 }
 
+.post-content-staff p {
+	margin-top: -3vh !important; 
+	display: inline-block;
+}
+
 .photo-content-staff {
 	height: 24vh;
 	width: 24vw;
 	margin-top: 10vh;
+	position: relative;
+	overflow: hidden;
 }
 
-.photo-content-staff img {
+.hover img {
 	width: 100%;
 	height: 100%;
 }
 
-.loop-content-staff:nth-child(2) {
-	position:relative;
-	top: 5vh;
+.hover {
+	position: absolute;
+	top: 0;
+	left: 0; 
 }
+
+.hover img{
+	-webkit-transition: all 2s ease; /* Safari and Chrome */
+    -moz-transition: all 2s ease; /* Firefox */
+    -ms-transition: all 2s ease; /* IE 9 */
+    -o-transition: all 2s ease; /* Opera */
+    transition: all 2s ease;
+}
+
+.photo-content-staff:hover .hover img {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+     color:green;
+}
+
 
 h2 {
-	font-family: 'EB Garamond', serif;
+	font-family:  TT, serif;
+	text-transform: uppercase;
 	font-weight: normal;
 	font-size: 2em;
-	margin-top: 0px;
+	margin: 0px;
+	margin-top: 2vh;
 }
 
-p {
+.post-content-staff p {
 	margin-top: 0px;
-	font-family: 'EB Garamond', serif;
+	font-family:  TT, serif;
 }
+
+
+/*
+SPONSORS-about
+*/
+
+.color-box-sponsors {
+	background-color: #f2f4ed;
+	height: 7vh;
+	width: 22vw;
+	display: inline-block;
+	position: absolute;
+	top: 227vh;
+	right: 38.5vw;
+	z-index: -1;
+}
+
+.post-content-sponsors {
+	margin-top: 5vh;
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+	font-family: 'EB Garamond', serif;
+	text-align: center;
+}
+
+.post-content-sponsors-logo {
+	margin-top: 2vh;
+	display: inline-block;
+}
+
+.post-content-sponsors-logo img {
+	height: 9vh;
+	width: 8vw;
+}
+
+
+
 /*CSS for page-teaching.php below this line*/
 
 .headline {

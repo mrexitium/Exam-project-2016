@@ -64,3 +64,12 @@ jQuery('.loop-content-staff .post-content-staff:nth-child(3)').css({'position': 
 jQuery('.loop-content-staff .post-content-staff:nth-child(5)').css({'position': 'relative', 'top': '5vh'});
 jQuery('.loop-content-staff .post-content-staff:nth-child(6)').css({'position': 'relative', 'top': '10vh'});
 
+jQuery(".photo-content-staff").mouseenter(function(){
+	jQuery(this).siblings('h2').css("color","#B2A897");
+	jQuery(this).siblings('p').css({"color": "#B2A897", "border-bottom": "1px solid #B2A897"});
+});
+
+jQuery(".photo-content-staff").mouseleave(function(){
+	jQuery(this).siblings('h2').css("color","#000000");
+	jQuery(this).siblings('p').css({"color": "#000", "border-bottom": "0px"});
+});
