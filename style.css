@@ -137,10 +137,8 @@ nav ul a:hover {
 /*CSS for index.php below this line*/
 
 .vidya {
-	width: 100vh;
-	height: 89vh;
-
-
+	width: 100vw;
+	height: 100vh;
 }
 
 video {
