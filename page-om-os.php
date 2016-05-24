@@ -38,7 +38,7 @@
 
 			<?php endwhile; wp_reset_postdata(); ?> <!-- Important to reset the postdata so another custom loop can be made later -->
 		<div class="staff-header">	
-		<h4>Staff</h4>
+		<h4>Personale</h4>
 		<div class="color-box-staff"></div>
 		</div>
 		<!-- STAFF -->

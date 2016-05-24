@@ -4,7 +4,7 @@
 	
 	<div class="headline">
 		<div class="color-box color-livery"></div>
-		<h1>Livery</h1>
+		<h1>Opstaldning</h1>
 	</div>
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

@@ -10,7 +10,7 @@
 			<?php $query = new WP_Query(array( 'category_name' => 'competitions' ) ); 
 
 			while($query->have_posts()) : $query->the_post(); ?> <!-- Shorthand while loop that takes the posts that fits the criteria 3 lines up -->
-				<div class="post-content">
+				<div class="post-content-events">
 					<div class="loop-content-events center">
 						<h2>
 							<?php the_title(); ?>

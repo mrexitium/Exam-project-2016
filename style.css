@@ -28,7 +28,7 @@ html, body {
 
 .site-header {
 	width:100%;
-	height:15vh;
+	height:11vh;
 }
 
 .site-nav {
@@ -92,59 +92,6 @@ nav ul a:hover {
 	margin:auto;
 }
 
-@media only screen and (max-width: 750px) {
-	.site-nav {
-		flex-direction: column;
-		position: static;
-		width:100%;
-		padding:0;
-		height: 75px;
-	}
-
-	.logo-wrapper {
-		order:1;
-	}
-
-	.menu-left-menu-container {
-		width:100%;
-		order:2;
-		height:150px;
-	}
-
-	.menu-right-menu-container {
-		width:100%;
-		order:3;
-		height:150px;
-	}
-
-	nav ul {
-		flex-flow: column wrap;
-		width:100%;
-	}
-
-	.menu-left-menu-container ul li {
-		width:100%;
-		text-align: center;
-		height:49px;
-		border-bottom: 1px solid #e4e5e6;
-	}
-
-	.menu-right-menu-container ul li {
-		width:100%;
-		text-align: center;
-		height:49px;
-		border-bottom: 1px solid #e4e5e6;
-	}
-
-	nav ul a {
-		line-height: 49px;
-	}
-
-	.site-header {
-		height:375px;
-	}
-}
-
 /*CSS for footer.php below this line*/
 
 #site-footer {
@@ -186,12 +133,6 @@ nav ul a:hover {
 	color: black;
 }
 
-@media only screen and (max-width: 750px) {
-	.social-media p {
-		display: none;
-	}
-}
-
 
 /*CSS for index.php below this line*/
 
@@ -202,8 +143,6 @@ nav ul a:hover {
 	background-repeat: no-repeat;
 	height: 85vh;
 }
-
-/*CSS for single.php below this line*/
 
 /*CSS for page-about.php below this line*/
 
@@ -265,8 +204,8 @@ HISTORY-about
 	width: 100%;
 	height: 70vh;
 	overflow: hidden;
-	clear: both;'EB Garamond'
-	font-family: , serif;
+	clear: both;
+	font-family:'EB Garamond', serif;
 	margin-bottom: 0px;
 }
 
@@ -307,7 +246,7 @@ h4 {
     font-family: TT, serif;
     font-weight: normal;
     margin: 0;
-    display: inline-block;
+    display: block;
     line-height: 10vh;
     margin-top: 4vh;
     font-size: 2.5em;
@@ -315,13 +254,13 @@ h4 {
 }
 
 .color-box-staff {
-	background-color: #dfdbd0;
+    background-color: #dfdbd0;
     height: 7vh;
     width: 20vw;
     display: inline-block;
-    position: absolute;
-    top: 129vh;
-    right: 39.5vw;
+    position: relative;
+    top: -5vh;
+    right: 0vw;
     z-index: -1;
 }
 
@@ -361,6 +300,8 @@ h4 {
 	position: absolute;
 	top: 0;
 	left: 0; 
+	width: inherit;
+	height: inherit;
 }
 
 .hover img{
@@ -401,8 +342,8 @@ SPONSORS-about
     width: 22vw;
     display: inline-block;
     position: relative;
-    top: 2vh;
-    left: -18vw;
+    top: -5vh;
+    left: 0vw;
     z-index: -1;
 }
 
@@ -427,6 +368,11 @@ SPONSORS-about
 .post-content-sponsors-logo img {
 	height: 9vh;
 	width: 8vw;
+}
+
+.loop-content-sponsors-logo {
+	display: flex;
+	justify-content: space-around;
 }
 
 
@@ -513,44 +459,6 @@ SPONSORS-about
 	float:right;
 }
 
-@media only screen and (max-width: 750px) {
-	.post-content {
-		display: flex;
-		flex-direction: column;
-		height: 120vh;
-	}
-
-	.loop-content {
-		width: 100%;
-		order: 2;
-	}
-
-	.loop-wrapper {
-	display: flex;
-	justify-content: space-around;
-	flex-flow: row wrap;
-	}
-
-	.photo-content {
-		width: 80%;
-		margin: 0 10%;
-		order: 1;
-	}
-
-	.photo-content img {
-		height: auto;
-		width: 80%;
-		overflow: hidden;
-	}
-
-	.color-box {
-	    height: 100px;
-	    width: 80vw;
-	    top: 390px;
-	    left: 10vw;
-	}
-}
-
 .horse {
 	width: 80%;
 	margin: 0 10%;
@@ -606,19 +514,19 @@ SPONSORS-about
 }
 
 
-.post-content:nth-child(even) div.loop-content-events {
+.post-content-events:nth-child(even) div.loop-content-events {
 	float:right;
 }
 
-.post-content:nth-child(odd) div.loop-content-events {
+.post-content-events:nth-child(odd) div.loop-content-events {
 	float:left;
 }
 
-.post-content:nth-child(even) div.photo-content-events {
+.post-content-events:nth-child(even) div.photo-content-events {
 	float:left;
 }
 
-.post-content:nth-child(odd) div.photo-content-events {
+.post-content-events:nth-child(odd) div.photo-content-events {
 	float:right;
 }
 
@@ -669,7 +577,6 @@ SPONSORS-about
   border-radius: 0px;
   color: #000;
   font-size: 13px;
-  font-family: montserrat;
   padding: 12px 22px 12px 22px;
   background-color: #000;
   color: #fff;
@@ -719,7 +626,6 @@ SPONSORS-about
 
 .hidden {
 	display:none;
-	/*visibility: hidden;*/
 }
 
 .more-description {
@@ -750,44 +656,12 @@ SPONSORS-about
 	margin-left: 3vh;
 }
 
-@media only screen and (max-width: 750px) {
-
-	.headline-events h1 {
-
-		font-size: 10vh;
-		line-height: 10vh;
-	    border-top: 1px solid #000;
-	    margin-top: 4vh;
-	}
-	.color-box-events {
-	    height: 100px;
-	    width: 80vw;
-	    top: 390px;
-	    left: 10vw;
-	}
-
-	.center {
-		padding-top: 0vh;
-	}
-
-	.loop-content-events {
-		width: 100%;
-		order: 1;
-	}
-
-	.photo-content-events {
-		width: 80%;
-		margin: 0 10%;
-		order: 2;
-	}
-
-	.photo-content-events img {
-		height: auto;
-		width: 80%;
-		overflow: hidden;
-	}
-
-
+.post-content-events {
+	width: 100%;
+	height: 80vh;
+	overflow: hidden;
+	clear: both;
+	font-family: 'EB Garamond', serif;
 }
 
 /*CSS for page-contact.php below this line*/
@@ -843,7 +717,229 @@ width:100%;
 height: auto;
 }
 
-@media only screen and (max-width: 750px) {
+/*Media queries*/
+
+
+
+@media only screen and (max-device-width: 667px) and (orientation : portrait) { 
+
+	/*Header media queries*/
+	.site-nav {
+		flex-direction: column;
+		position: static;
+		width:100%;
+		padding:0;
+		height: 75px;
+	}
+
+	.logo-wrapper {
+		order:1;
+	}
+
+	.menu-left-menu-container {
+		width:100%;
+		order:2;
+		height:150px;
+	}
+
+	.menu-right-menu-container {
+		width:100%;
+		order:3;
+		height:150px;
+	}
+
+	nav ul {
+		flex-flow: column wrap;
+		width:100%;
+	}
+
+	.menu-left-menu-container ul li {
+		width:100%;
+		text-align: center;
+		height:49px;
+		border-bottom: 1px solid #e4e5e6;
+	}
+
+	.menu-right-menu-container ul li {
+		width:100%;
+		text-align: center;
+		height:49px;
+		border-bottom: 1px solid #e4e5e6;
+	}
+
+	nav ul a {
+		line-height: 49px;
+	}
+
+	.site-header {
+		height:375px;
+	}
+
+	/*Footer media queries*/
+
+	.social-media p {
+		display: none;
+	}
+
+	/*About media queries*/
+	.post-content-about {
+		display: flex;
+		flex-flow: row wrap;
+		height: auto;
+	}
+
+	.loop-content-about {
+		order: 2;
+		clear: both;
+		width: 100%;
+	}
+
+	.photo-content-about {
+		order: 1;
+		clear: both;
+		width: 100%;
+		min-height: 40vh;
+	}
+
+	.color-box-history {
+	    height: 80px;
+	    width: 70vw;
+	    display: block;
+	    position: absolute;
+	    top: 950px;
+		left: 15vw
+	}
+
+	.color-box-staff {
+		height: 70px;
+		width: 70vw;
+		display: inline-block;
+		position: relative;
+		top: -5vh;
+		right: 0vw;
+	}
+
+	.post-content-staff {
+		width: 100%;
+		padding-bottom: 10vh;
+	}
+
+	.photo-content-staff {
+		width:100%;
+		height:auto;
+		margin-top: 0;
+		min-height: 25vh;
+	}
+
+	.hover {
+		display: block;
+		width: 100%
+		height:auto;
+	}
+
+	.color-box-sponsors {
+		height: 70px;
+		width: 70vw;
+		display: inline-block;
+		position: relative;
+		top: -5vh;
+		right: 0vw;
+	}
+
+	.post-content-sponsors-logo {
+		height: 60px;
+		width: 60px;
+	}
+
+	.post-content-sponsors-logo img {
+		height: auto;
+		width: 100%;
+	}
+
+	/*Teaching media queries*/
+	.post-content {
+		display: flex;
+		flex-direction: column;
+		height: 120vh;
+	}
+
+	.loop-content {
+		width: 100%;
+		order: 2;
+	}
+
+	.loop-wrapper {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	}
+
+	.photo-content {
+		width: 80%;
+		margin: 0 10%;
+		order: 1;
+	}
+
+	.photo-content img {
+		height: auto;
+		width: 80%;
+		overflow: hidden;
+	}
+
+	.color-box {
+	    height: 100px;
+	    width: 80vw;
+	    top: 410px;
+	    left: 10vw;
+	}
+
+	.headline h1 {
+		font-size: 3em;
+	}
+
+	/*Events page media queuries*/
+
+	.headline-events h1 {
+
+		font-size: 2.5em;
+		line-height: 10vh;
+	    border-top: 1px solid #000;
+	    margin-top: 4vh;
+	}
+	.color-box-events {
+	    height: 100px;
+	    width: 80vw;
+	    top: 390px;
+	    left: 10vw;
+	}
+
+	.center {
+		padding-top: 0vh;
+	}
+
+	.loop-content-events {
+		width: 100%;
+		order: 1;
+		margin-bottom: 5%;
+	}
+
+	.photo-content-events {
+		width: 80%;
+		margin: 0 10%;
+		order: 2;
+	}
+
+	.photo-content-events img {
+		height: auto;
+		width: 80%;
+		overflow: hidden;
+	}
+
+	.post-content-events {
+		height: 100vh;
+	}
+
+	/*Contact page media queries*/
 
 	.loop-wrapper {
 		flex-flow: column wrap;
@@ -862,10 +958,8 @@ height: auto;
 	}
 
 	.contact-picture h1 {
-	font-family: 'Playfair Display SC', serif;
+		font-family: 'Playfair Display SC', serif;
 		font-weight: lighter;
 		text-align: center;
 	}
 }
-
-

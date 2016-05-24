@@ -45,7 +45,7 @@ function loadMorePictures() {
 
 jQuery('.open').click(function () {
 	jQuery(this).toggleText('See Less', 'See More');
-    jQuery(this).closest('.post-content').find('.open-content').fadeToggle(500);
+    jQuery(this).closest('.post-content-events').find('.open-content').fadeToggle(500);
     
     
 });
@@ -56,13 +56,21 @@ jQuery.fn.toggleText = function(t1, t2){
   return this;
 };
 
-if (window.matchMedia( "(min-width: 750px)" )) {
+if (window.matchMedia( "(min-width: 750px)" ).matches) {
 	jQuery('.loop-content-staff .post-content-staff:nth-child(2)').css({'position': 'relative', 'top': '5vh'});
 	jQuery('.loop-content-staff .post-content-staff:nth-child(3)').css({'position': 'relative', 'top': '10vh'});
 	jQuery('.loop-content-staff .post-content-staff:nth-child(5)').css({'position': 'relative', 'top': '5vh'});
 	jQuery('.loop-content-staff .post-content-staff:nth-child(6)').css({'position': 'relative', 'top': '10vh'});
 	jQuery('.loop-content-staff .post-content-staff:nth-child(8)').css({'position': 'relative', 'top': '5vh'});
 	jQuery('.loop-content-staff .post-content-staff:nth-child(9)').css({'position': 'relative', 'top': '10vh'});	
+}
+else {
+	jQuery('.loop-content-staff .post-content-staff:nth-child(2)').css({'position': 'relative', 'top': '0vh'});
+	jQuery('.loop-content-staff .post-content-staff:nth-child(3)').css({'position': 'relative', 'top': '0vh'});
+	jQuery('.loop-content-staff .post-content-staff:nth-child(5)').css({'position': 'relative', 'top': '0vh'});
+	jQuery('.loop-content-staff .post-content-staff:nth-child(6)').css({'position': 'relative', 'top': '0vh'});
+	jQuery('.loop-content-staff .post-content-staff:nth-child(8)').css({'position': 'relative', 'top': '0vh'});
+	jQuery('.loop-content-staff .post-content-staff:nth-child(9)').css({'position': 'relative', 'top': '0vh'});
 }
 
 jQuery(".photo-content-staff").mouseenter(function(){

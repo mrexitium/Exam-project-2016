@@ -23,7 +23,7 @@
 			<nav class="site-nav">
 				<?php wp_nav_menu(['theme_location' => 'left-nav']); ?>
 				<div class="logo-wrapper">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo">
+					<a href="http://fyensrideklub.jespers-design.dk/"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo"></a>
 				</div>
 				<?php wp_nav_menu(['theme_location' => 'right-nav']); ?>
 			</nav>

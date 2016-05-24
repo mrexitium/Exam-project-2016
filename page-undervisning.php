@@ -32,6 +32,11 @@
 
 			<?php endwhile; wp_reset_postdata(); ?> <!-- Important to reset the postdata so another custom loop can be made later -->
 		
+		<div class="headline">
+			<div class="color-box"></div>
+			<h1>Elevheste</h1>
+		</div>
+
 		</div> <!-- End of .content -->
 
 		
