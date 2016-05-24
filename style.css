@@ -137,12 +137,39 @@ nav ul a:hover {
 /*CSS for index.php below this line*/
 
 .vidya {
-	width: 100%;
-	background-image: url('images/instagram.png');
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	height: 85vh;
+	width: 100vh;
+	height: 90vh;
+
+
 }
+
+video {
+	width: 100%;
+   	min-height: 90%;
+}
+
+#vid {
+	position: absolute;
+  top: 0;
+  z-index: -100;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+@media screen and (max-width: 1467px) {
+   video {
+   	left: 0;
+	right: 0;
+    }
+}
+    
+
+@media screen and (min-width: 1467px) {
+    video {
+     width: 100%;}
+    }
 
 /*CSS for page-about.php below this line*/
 
