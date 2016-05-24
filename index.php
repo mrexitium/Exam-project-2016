@@ -2,7 +2,11 @@
 		
 			
 			<div class="vidya">
-				
+				<div id="vid">
+					<video autoplay  id="bgvid" loop class="fullscreen-bg__video">
+		  				<source src="<?php echo get_template_directory_uri(); ?>/videobackground.mp4" type="video/webm">
+					</video>
+				</div>
 			</div>
 
 			<?php $query = new WP_Query(array( 'category_name' => 'instagram' ) ); 
