@@ -44,7 +44,7 @@ function loadMorePictures() {
 })(jQuery);
 
 jQuery('.open').click(function () {
-	jQuery(this).toggleText('See Less', 'See More');
+	jQuery(this).toggleText('Se Mindre', 'Se Mere');
     jQuery(this).closest('.post-content-events').find('.open-content').fadeToggle(500);
     
     

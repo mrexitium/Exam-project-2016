@@ -19,7 +19,7 @@
 							<?php the_excerpt(); ?>
 						</p>
 
-						<div class="see open hvr-outline-in" >See more</div>
+						<div class="see open hvr-outline-in" >Se mere</div>
 					</div>
 					<?php 
 						$post_image_id = get_post_thumbnail_id($post_to_use->ID);

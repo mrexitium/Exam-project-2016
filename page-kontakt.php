@@ -23,18 +23,22 @@
 				</div>
 
 			<?php endwhile; wp_reset_postdata(); ?> <!-- Important to reset the postdata so another custom loop can be made later -->
-		</div><!-- loop-wrapper -->
+		
 
-        <?php $query2 = new WP_Query(array( 'category_name' => 'contactpicture' ) ); 
-        while($query2->have_posts()) : $query2->the_post(); ?> <!-- Shorthand while loop that takes the posts that fits the criteria 3 lines up -->
-            <div class="contact-picture">
-                 <a href="<?php echo get_post_meta($post->ID, 'value', true); ?>
-"><?php the_post_thumbnail(); ?></a>
-                 <h1>
-                    <a href="<?php the_meta(); ?>"><?php the_title(); ?></a>
-                 </h1>
-            </div>
-        <?php endwhile; wp_reset_postdata(); ?> <!-- Important to reset the postdata so another custom loop can be made later -->
+            <?php $query2 = new WP_Query(array( 'category_name' => 'contactpicture' ) ); 
+            while($query2->have_posts()) : $query2->the_post(); ?> <!-- Shorthand while loop that takes the posts that fits the criteria 3 lines up -->
+                <div class="contact-picture">
+                     <a href="<?php echo get_post_meta($post->ID, 'link', true); ?>
+    "><?php the_post_thumbnail(); ?></a>
+                     <h1>
+                        <a href="<?php echo get_post_meta($post->ID, 'link', true); ?>"><?php the_title(); ?></a>
+                     </h1>
+                </div>
+            <?php endwhile; wp_reset_postdata(); ?> <!-- Important to reset the postdata so another custom loop can be made later -->
+
+        </div><!-- loop-wrapper -->
+
+        
 		
 		</div> <!-- End of .content -->
 
