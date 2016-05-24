@@ -3,7 +3,7 @@
 		<div class="content"> <!-- Div for everything between header and footer -->
 			<div class="headline">
 				<div class="color-box"></div>
-				<h1>TEACHING</h1>
+				<h1>Undervisning</h1>
 			</div>
 			
 			<!-- Sample of The Loop to use for later -->

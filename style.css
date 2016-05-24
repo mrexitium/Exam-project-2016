@@ -336,6 +336,12 @@ h4 {
 .post-content-staff p {
 	margin-top: -3vh !important; 
 	display: inline-block;
+	font-family: 'Playfair Display SC', serif;
+}
+
+.post-content-staff h2 {
+	font-size: 1.5em;
+	font-family: 'Playfair Display SC', serif;
 }
 
 .photo-content-staff {
@@ -384,25 +390,20 @@ h2 {
 	margin-top: 2vh;
 }
 
-.post-content-staff p {
-	margin-top: 0px;
-	font-family:  TT, serif;
-}
-
 
 /*
 SPONSORS-about
 */
 
 .color-box-sponsors {
-	background-color: #f2f4ed;
-	height: 7vh;
-	width: 22vw;
-	display: inline-block;
-	position: absolute;
-	top: 227vh;
-	right: 38.5vw;
-	z-index: -1;
+    background-color: #f2f4ed;
+    height: 12vh;
+    width: 22vw;
+    display: inline-block;
+    position: relative;
+    top: 2vh;
+    left: -18vw;
+    z-index: -1;
 }
 
 .post-content-sponsors {
@@ -412,6 +413,10 @@ SPONSORS-about
 	clear: both;
 	font-family: 'EB Garamond', serif;
 	text-align: center;
+}
+
+.post-content-sponsors p {
+	text-align: left;
 }
 
 .post-content-sponsors-logo {

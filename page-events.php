@@ -3,7 +3,7 @@
 		<div class="content"> <!-- Div for everything between header and footer -->
 			<div class="headline-events">
 				<div class="color-box-events"></div>
-				<h1>EVENTS &<br/>COMPETITIONS</h1>
+				<h1>EVENTS &<br/>Konkurrencer</h1>
 			</div>
 			
 			<!-- Sample of The Loop to use for later -->

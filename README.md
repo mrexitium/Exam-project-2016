@@ -68,7 +68,7 @@ Install Wordpress on the server, set up database and put the files in the theme 
 
 Log in as admin, enable the theme and create the following pages:
 ```
-about, contact, events, livery, teaching
+om os, kontakt, events, opstaldning, undervisning
 ```
 #### Step 3
 Go to Appearance - menu and create a menu called 
@@ -86,13 +86,49 @@ right menu
 ```
 In this menu put the pages livery, events and contact, and set its position as right menu.
 
-#### Step 5
+#### Step 5 - Home page
 
-Home page @@@@ more content later
+Go to plugins and download the plugin Instagram Feed.
+Activate it, go to Settings and login to instagram.
+Uncheck the header, follow button and load more buttons, set number of photos to 4 and columns to 4.
 
-#### Step 6
+Add a new post called with the category 
 
-About page @@@@ more content later
+```
+instagram
+```
+In the content field of this post write
+
+```
+[instagram-feed]
+```
+
+#### Step 6 - About page
+
+##### History part
+
+Create a new post called 'Historie', and give it the category 
+```
+about
+```
+then add an image as the featured img. And add the history of the company in the content field.
+
+##### Staff part
+For each staff member you want, create a new post with the category 
+```
+staff
+```
+and put their name as the title, their job as the content and their photo as the featured image.
+
+##### Sponsor part
+
+Add a new post with the title 
+```
+Sponsorer
+```
+and the content should be your text about sponsors, category has to be ```sponsors```.
+
+Add one new post for each sponsor logo you want to show as featured img with the category ```sponsors-logo```
 
 #### Step 7
 
@@ -102,11 +138,11 @@ Add posts for all the horses with thumbnail pictures and category 'horses'.
 
 #### Step 8
 
-Livery page. Go to the livery page and put in text on the content box, and give it a thumbnail picture.
+Opstaldnings page. Go to the opstaldning page and put in text on the content box, and give it a thumbnail picture.
 
 #### Step 9
 
-Events page. @@@@ more content later
+Events page. For each event create a new post with the date as the title, the description as content, and a short description as the excerpt, remember to set a thumbnail picture aswell. The category of these posts must be ```competitions```.
 
 #### Step 10
 

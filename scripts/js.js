@@ -1,7 +1,7 @@
 (function($) {
 var isActive = false;
 $(window).scroll(function(){
-	if (window.location.href == 'http://jespers-design.dk/wordpress3/teaching/') {
+	if ((window.location.href == 'http://jespers-design.dk/fyensrideklub/undervisning/') || (window.location.href == 'http://fyensrideklub.jespers-design.dk/undervisning/')) {
 	    if  (!isActive && $(window).scrollTop() == $(document).height() - $(window).height()){
 	    	isActive = true;
 	    	loadMorePictures();
@@ -14,7 +14,7 @@ offsetNum = "";
 
 function loadMorePictures() {
 	$.ajax({
-		url: 'http://jespers-design.dk/wordpress3/wp-admin/admin-ajax.php' + offset + offsetNum,
+		url: 'http://jespers-design.dk/fyensrideklub/wp-admin/admin-ajax.php' + offset + offsetNum,
 		type: 'post',
 		data: {
 			action: 'lazy_load'
@@ -56,11 +56,14 @@ jQuery.fn.toggleText = function(t1, t2){
   return this;
 };
 
-
-jQuery('.loop-content-staff .post-content-staff:nth-child(2)').css({'position': 'relative', 'top': '5vh'});
-jQuery('.loop-content-staff .post-content-staff:nth-child(3)').css({'position': 'relative', 'top': '10vh'});
-jQuery('.loop-content-staff .post-content-staff:nth-child(5)').css({'position': 'relative', 'top': '5vh'});
-jQuery('.loop-content-staff .post-content-staff:nth-child(6)').css({'position': 'relative', 'top': '10vh'});
+if (window.matchMedia( "(min-width: 750px)" )) {
+	jQuery('.loop-content-staff .post-content-staff:nth-child(2)').css({'position': 'relative', 'top': '5vh'});
+	jQuery('.loop-content-staff .post-content-staff:nth-child(3)').css({'position': 'relative', 'top': '10vh'});
+	jQuery('.loop-content-staff .post-content-staff:nth-child(5)').css({'position': 'relative', 'top': '5vh'});
+	jQuery('.loop-content-staff .post-content-staff:nth-child(6)').css({'position': 'relative', 'top': '10vh'});
+	jQuery('.loop-content-staff .post-content-staff:nth-child(8)').css({'position': 'relative', 'top': '5vh'});
+	jQuery('.loop-content-staff .post-content-staff:nth-child(9)').css({'position': 'relative', 'top': '10vh'});	
+}
 
 jQuery(".photo-content-staff").mouseenter(function(){
 	jQuery(this).siblings('h2').css("color","#B2A897");

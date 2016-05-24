@@ -2,7 +2,7 @@
 		
 		<div class="content"> <!-- Div for everything between header and footer -->
 			<div class="headline-about">
-				<h1>About us</h1>
+				<h1>Om os</h1>
 			</div>
 		<!-- HISTORY -->	
 			<!-- Sample of The Loop to use for later -->
