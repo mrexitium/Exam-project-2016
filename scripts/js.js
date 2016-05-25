@@ -22,8 +22,10 @@ function loadMorePictures() {
 		success: function( result ) {
 			isActive = false;
 			for (var i = 0; i < result.data.length; i++) {
+				console.log(result.data[i]);
+				var content = result.data[i].post_content;
 				var thumbnail = result.data[i].thumbnail;
-				$('.content').append('<div class="horse">' + thumbnail + '</div>');
+				$('.content').append('<div class="horse">' + thumbnail + '<div class="horsetext"><p>' + content + '</p></div></div>');
 			}
 
 			if (offset == "") {
@@ -64,4 +66,9 @@ jQuery(".photo-content-staff").mouseenter(function(){
 jQuery(".photo-content-staff").mouseleave(function(){
 	jQuery(this).siblings('h2').css("color","#000000");
 	jQuery(this).siblings('p').css({"color": "#000", "border-bottom": "0px"});
+});
+
+jQuery(document).on({
+    ajaxStart: function() { jQuery('body').addClass("loading");    },
+     ajaxStop: function() { jQuery('body').removeClass("loading"); }    
 });

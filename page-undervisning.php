@@ -39,6 +39,8 @@
 
 		</div> <!-- End of .content -->
 
+		<div class="modal"></div>
+
 		
 
 <?php get_footer(); ?>

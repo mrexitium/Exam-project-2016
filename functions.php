@@ -38,7 +38,7 @@ function lazy_load() {
 	$query = new WP_Query( $args );
 
 	for ($i=0; $i < count($query->posts); $i++) {
-
+		$query->posts[$i]->post_content = apply_filters('the_content', $query->posts[$i]->post_content);
 		$query->posts[$i]->thumbnail = get_the_post_thumbnail($query->posts[$i]->ID);
 	}
 
