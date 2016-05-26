@@ -26,7 +26,7 @@
 							if ($thumbnail) (string)$thumbnail = $thumbnail[0];
 						}
 					 ?>
-					<div class="photo-content" style="background: url('<?php echo $thumbnail; ?>') no-repeat; background-position: top center; background-size: 100% auto;">
+					<div class="photo-content" style="background: url('<?php echo $thumbnail; ?>') no-repeat; background-position: top center; background-size: auto 100%;">
 					</div>
 				</div>
 

@@ -924,7 +924,7 @@ height: auto;
 	.post-content {
 		display: flex;
 		flex-direction: column;
-		height: 120vh;
+		height: 160vh;
 	}
 
 	.loop-content {
@@ -1186,7 +1186,7 @@ height: auto;
 	.post-content {
 		display: flex;
 		flex-direction: column;
-		height: 120vh;
+		height: 200vh;
 	}
 
 	.loop-content {
